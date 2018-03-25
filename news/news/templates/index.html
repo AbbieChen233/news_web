@@ -1,0 +1,8 @@
+{% for jsonfilename,json in file_json.items() %}
+	
+	{% if filename == jsonfilename%}
+		<p>title:{{ json['title'] }}</p>
+		<p>created_time:{{ json['created_time'] }}</p>
+		<p>content:{{ json['content'] }}</p>
+	{% endif %}
+{% endfor %}
